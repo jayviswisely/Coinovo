@@ -19,6 +19,8 @@ fetch('https://api.coingecko.com/api/v3/simple/price?ids=bitcoin%2Cethereum%2Cte
                         <span>/USD</span>
                     </div>
                     <div class="coin-price">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                        <i class="fa-solid fa-arrow-trend-down"></i>
                         <span class="price">$${price}</span>
                         <span class="change">${change}</span>
                     </div>
