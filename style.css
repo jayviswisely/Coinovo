@@ -69,7 +69,7 @@
     cursor: pointer;
 }
 
-.nav-button.login:hover, .nav-button.login:focus {
+.nav-button.signup:hover, .nav-button.signup:focus {
     background-color: #1c1c1c;
     color: #f5f5f7;
 }
@@ -79,8 +79,13 @@
     color: #f5f5f7;
 }
 
-.login {
+.signup {
     background-color: #30a1ff;
+}
+
+.nav-hamburger {
+    font-size: 22px;
+    display: none;
 }
 
 /* Hero Section */
@@ -129,7 +134,7 @@
 
 .hero-button {
     border: none;
-    width: 15vw;
+    width: 20vw;
     padding: 2vh 0.5vw;
     border-radius: 5px;
     font-weight: 500;
@@ -382,4 +387,196 @@
 .footer-link:hover {
     cursor: pointer;
     color: #30a1ff;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1100px) {
+    .login {
+        display: none;
+    }
+
+    .nav-button {
+        width: 13vw
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .nav-hamburger {
+        display: block;
+        padding-left: 1vw;
+    }
+
+    .hero-text {
+        width: 70%;
+    }
+
+    .hero-illus {
+        width: 30%;
+    }
+
+    .coin {
+        width: 30vw;
+        height: 40vh;
+    }
+
+    .crypto-container {
+        height: 90vh;
+    }
+    
+    .about {
+        height: 120vh;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-top: 5vh;
+        padding-left: 0;
+    }
+
+    .about-details {
+        flex-direction: column-reverse;
+    }
+
+    .about-detail-container {
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        padding: 0 5vw;
+    }
+
+    .about-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 2vh 0;
+    }
+
+    .about-illus-container {
+        width: 100%;
+        padding-left: -10vw;
+    }
+
+    .about-illus {
+        width: 80%;
+    }
+
+    .about-icon {
+        padding-right: 0;
+    }
+
+    .final {
+        height: 40vh;
+    }
+
+    .footer {
+        height: 30vh;
+    }
+
+    .footer-link {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    .nav {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+
+    .nav-hamburger {
+        padding-left: 4vw;
+    }
+
+    .signup {
+        width: 30vw;
+    }
+
+    .hero-illus {
+        display: none;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+
+    .hero-benefit {
+        font-size: 12px;
+    }
+
+    .hero-headline {
+        font-size: 48px;
+    }
+
+    .hero-desc {
+        font-size: 16px;
+    }
+
+    .hero-button {
+        width: 50vw;
+    }
+
+    .crypto-text {
+        text-align: center;
+    }
+
+    .coin {
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .crypto-container {
+        display: grid;
+        height: 300vh;
+        grid-template-columns: 1fr;
+        padding-top: 5vh;
+    }
+
+    .crypto {
+        height: 320vh;
+        padding-top: 10vh;
+    }
+
+    .about-illus {
+        display: none;
+    }
+
+    .about {
+        height: 150vh;
+        padding-top: 10vh;
+    }
+
+    .about-name {
+        font-size: 24px;
+    }
+
+    .about-details {
+        font-size: 14px;
+    }
+
+    .about-detail-container {
+        padding-top: 5vh;
+    }
+    
+    .about-detail {
+        padding-bottom: 5vh
+    }
+
+    .final {
+        height: 70vh;
+    }
+
+    .footer {
+        height: 50vh;
+    }
+
+    .footer-links {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
 }
